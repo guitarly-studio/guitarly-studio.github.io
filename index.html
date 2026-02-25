@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarly | Professional Guitar Apps for Practice & Performance</title>
+    <meta name="description" content="Master your guitar journey with Guitarly. Professional apps for chord progressions, backing tracks, and structured practice. Download on Google Play.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Guitarly</a>
+            <ul class="nav-links">
+                <li><a href="#apps">Our Apps</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="https://play.google.com/store/apps/dev?id=7929457618919631777" class="btn btn-small">View Play Store</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('guitarly_hero_bg_1772017018925.png');">
+        <div class="container hero-content">
+            <h1 class="fade-in">Master Your Guitar Journey</h1>
+            <p class="fade-in-delay">Professional tools for practice, performance, and progression. Designed by guitarists, for guitarists.</p>
+            <div class="hero-btns fade-in-delay">
+                <a href="#apps" class="btn btn-primary">Browse Apps</a>
+                <a href="https://play.google.com/store/apps/dev?id=7929457618919631777" class="btn btn-secondary">Google Play</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="apps" class="apps-section">
+        <div class="container">
+            <h2 class="section-title">The Guitarly Suite</h2>
+            <div class="apps-grid">
+                <!-- App 1 -->
+                <div class="app-card">
+                    <img src="guitarly_app_mockup_1_1772017102496.png" alt="Guitar Studio - Chord Progress" class="app-image">
+                    <div class="app-info">
+                        <h3>Guitar Studio - Chord Progress</h3>
+                        <p>Compose, Visualise, Progress. Build complex chord progressions and explore harmonic possibilities.</p>
+                        <a href="https://play.google.com/store/apps/details?id=g9.smt.guitarStudio" class="btn-text">Learn More →</a>
+                    </div>
+                </div>
+                <!-- App 2 -->
+                <div class="app-card">
+                    <img src="guitarly_app_mockup_2_retry_1772017155402.png" alt="Guitar Soloist - Studio" class="app-image">
+                    <div class="app-info">
+                        <h3>Guitar Soloist - Studio</h3>
+                        <p>Your Personal Backing Band. High-quality backing tracks that adapt to your style.</p>
+                        <a href="https://play.google.com/store/apps/details?id=g9.smt.guitarSoloist" class="btn-text">Learn More →</a>
+                    </div>
+                </div>
+                <!-- App 3 -->
+                <div class="app-card">
+                    <div class="placeholder-icon">🎸</div>
+                    <div class="app-info">
+                        <h3>Guitarly - Backing Tracks</h3>
+                        <p>Massive Library, Infinite Inspiration. Access premium tracks across every genre.</p>
+                        <a href="https://play.google.com/store/apps/details?id=g9.guitarly" class="btn-text">Learn More →</a>
+                    </div>
+                </div>
+                <!-- App 4 -->
+                <div class="app-card">
+                    <div class="placeholder-icon">🎵</div>
+                    <div class="app-info">
+                        <h3>Guitar Solo - Backing Tracks</h3>
+                        <p>Focused Jamming. High-fidelity audio and intuitive controls for the perfect jam.</p>
+                        <a href="https://play.google.com/store/apps/details?id=guitar.solo" class="btn-text">Learn More →</a>
+                    </div>
+                </div>
+                <!-- App 5 -->
+                <div class="app-card">
+                    <div class="placeholder-icon">📈</div>
+                    <div class="app-info">
+                        <h3>Guitarly Practice - Learn</h3>
+                        <p>Practice Smarter, Not Harder. Structured learning paths and progress tracking.</p>
+                        <a href="https://play.google.com/store/apps/details?id=g9.smt.guitarly.practice" class="btn-text">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Guitarly</a>
+                    <p>Elevating the guitar experience through innovation and technology.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="https://play.google.com/store/apps/dev?id=7929457618919631777">Google Play Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 G9: guitar apps. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple fade-in animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.app-card').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
