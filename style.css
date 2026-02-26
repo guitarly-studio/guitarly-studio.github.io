@@ -75,13 +75,14 @@ h3,
 }
 
 .logo-main {
-    color: #1e40af;
-    /* Dark Blue */
+    color: #60a5fa;
+    /* Light Blue */
     letter-spacing: -0.5px;
 }
 
 .logo-suffix {
-    color: var(--accent);
+    color: #1e40af;
+    /* Dark Blue */
     font-size: 0.65em;
     position: relative;
     top: -0.4em;
