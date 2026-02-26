@@ -34,7 +34,8 @@
     <header class="hero"
         style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('guitarly_hero_bg_1772017018925.png');">
         <div class="container hero-content">
-            <h1 class="fade-in">Master Your Guitar Journey</h1>
+            <h1 class="fade-in"><span id="hero-title-text" class="title-text">Animated backing tracks for guitarists:
+                    Jam & Learn</span></h1>
             <p class="fade-in-delay">Professional tools for practice, performance, and progression. Designed by
                 guitarists, for guitarists.</p>
             <div class="hero-btns fade-in-delay">
@@ -156,6 +157,36 @@
         });
 
         document.querySelectorAll('.app-card').forEach((el) => observer.observe(el));
+
+        // Alternating Hero Titles
+        const titles = [
+            "Animated backing tracks for guitarists: Jam & Learn",
+            "The new way to learn guitar: watch & play",
+            "Learn guitar with backing tracks, scales, chords & visual fretboard. Practice smart!",
+            "Structured guitar practice with animated backing tracks, theory, exercises, guided jam sessions and quizzes.",
+            "Create animated guitar backing tracks, learn chords & scales, and jam!",
+            "Guitar Inspiration! Suggested scales and exercises that work over every chord."
+        ];
+
+        let currentTitleIndex = 0;
+        const titleElement = document.getElementById('hero-title-text');
+
+        function rotateTitle() {
+            titleElement.classList.add('fade-out');
+
+            setTimeout(() => {
+                currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+                titleElement.textContent = titles[currentTitleIndex];
+                titleElement.classList.remove('fade-out');
+                titleElement.classList.add('fade-in');
+
+                setTimeout(() => {
+                    titleElement.classList.remove('fade-in');
+                }, 600); // Match transition duration in CSS
+            }, 600); // Match transition duration in CSS
+        }
+
+        setInterval(rotateTitle, 5000); // Change title every 5 seconds
     </script>
 </body>
 
