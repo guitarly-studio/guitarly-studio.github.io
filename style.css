@@ -1,7 +1,7 @@
 :root {
     --primary: #3b82f6;
     --primary-hover: #2563eb;
-    --accent: #f97316;
+    --accent: #60a5fa;
     --bg-dark: #0f172a;
     --bg-darker: #020617;
     --text-light: #f8fafc;
@@ -75,7 +75,8 @@ h3,
 }
 
 .logo-main {
-    color: var(--text-light);
+    color: #1e40af;
+    /* Dark Blue */
     letter-spacing: -0.5px;
 }
 
