@@ -13,6 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const mix = urlParams.get('mix');
+        if (mix) window.location.href = 'guitarly://share?mix=' + mix;
+    </script>
 </head>
 
 <body>
