@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Guitarly Practice</title>
+    <!-- Add some basic styling so it looks nice if the instant redirect is slow -->
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f8f9fa; }
+        .btn { display: inline-block; padding: 15px 30px; font-size: 18px; color: white; background-color: #01875f; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: bold; }
+    </style>
+    <script>
+        // Set the specific package name for this folder's app
+        const APP_PACKAGE_NAME = "g9.smt.guitarly.practice";
+        
+        window.onload = function() {
+            // Attempt to open the native Play Store App directly
+            window.location.href = "market://details?id=" + APP_PACKAGE_NAME;
+            
+            // Fallback: If opening the native app fails (e.g., they are on a PC), 
+            // redirect them to the web Play Store after 2 seconds
+            setTimeout(function() {
+                window.location.href = "https://play.google.com/store/apps/details?id=" + APP_PACKAGE_NAME;
+            }, 2000);
+        };
+    </script>
+</head>
+<body>
+    <h2>You've been invited to use Guitarly Practice!</h2>
+    <p>Opening Google Play Store...</p>
+    <!-- Manual button in case the automatic redirect is blocked by their browser -->
+    <a href="https://play.google.com/store/apps/details?id=g9.smt.guitarly.practice" class="btn">Get it on Google Play</a>
+</body>
+</html>

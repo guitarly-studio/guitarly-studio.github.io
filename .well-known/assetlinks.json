@@ -8,5 +8,45 @@
         "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "g9.smt.guitarStudio",
+      "sha256_cert_fingerprints": [
+        "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "guitar.solo",
+      "sha256_cert_fingerprints": [
+        "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "g9.smt.guitarSoloist",
+      "sha256_cert_fingerprints": [
+        "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "g9.smt.guitarly.practice",
+      "sha256_cert_fingerprints": [
+        "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
+      ]
+    }
   }
 ]
