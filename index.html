@@ -14,9 +14,24 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const mix = urlParams.get('mix');
-        if (mix) window.location.href = 'guitarly://share?mix=' + mix;
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const mix = urlParams.get('mix');
+            if (mix) {
+                const isAndroid = /Android/i.test(navigator.userAgent);
+                if (isAndroid) {
+                    // Use Android intent to fall back to Google Play if the app is not installed
+                    window.location.href = 'intent://share?mix=' + mix + '#Intent;scheme=guitarly;package=g9.guitarly;end';
+                } else {
+                    // For non-Android, safely attempt to launch using a hidden iframe
+                    // This avoids blank screens or unknown scheme errors on the main page
+                    const iframe = document.createElement('iframe');
+                    iframe.style.display = 'none';
+                    iframe.src = 'guitarly://share?mix=' + mix;
+                    document.body.appendChild(iframe);
+                }
+            }
+        });
     </script>
 </head>
 
