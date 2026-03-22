@@ -1,6 +1,9 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "g9.guitarly",
@@ -11,45 +14,29 @@
     }
   },
   {
-    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "g9.smt.guitarStudio",
       "sha256_cert_fingerprints": [
-        "49:26:3F:6B:31:1A:C2:0B:71:99:87:37:A2:DF:97:B7:BF:3E:56:12:62:35:65:E6:DD:4C:0F:15:BB:82:4B:01",
+        "E8:44:EC:29:37:05:46:E7:3C:CE:7C:10:97:E7:EA:4C:F4:6A:96:89:B2:21:2F:DC:62:41:22:C1:B4:C4:C3:97",
         "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
       ]
     }
   },
   {
-    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "guitar.solo",
       "sha256_cert_fingerprints": [
-        "49:26:3F:6B:31:1A:C2:0B:71:99:87:37:A2:DF:97:B7:BF:3E:56:12:62:35:65:E6:DD:4C:0F:15:BB:82:4B:01",
-        "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
-      ]
-    }
-  },
-  {
-    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "g9.smt.guitarSoloist",
-      "sha256_cert_fingerprints": [
-        "49:26:3F:6B:31:1A:C2:0B:71:99:87:37:A2:DF:97:B7:BF:3E:56:12:62:35:65:E6:DD:4C:0F:15:BB:82:4B:01",
-        "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
-      ]
-    }
-  },
-  {
-    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "g9.smt.guitarly.practice",
-      "sha256_cert_fingerprints": [
-        "49:26:3F:6B:31:1A:C2:0B:71:99:87:37:A2:DF:97:B7:BF:3E:56:12:62:35:65:E6:DD:4C:0F:15:BB:82:4B:01",
+        "00:C0:09:82:00:1B:F4:17:E2:85:C7:2C:B4:94:E5:E7:7A:50:54:89:84:4E:80:2A:6D:65:B2:5F:D4:33:EC:BC",
         "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
       ]
     }
