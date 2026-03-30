@@ -40,5 +40,19 @@
         "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "g9.smt.guitarSoloist",
+      "sha256_cert_fingerprints": [
+        "44:B9:91:3F:58:E0:8B:3B:B0:9F:81:50:B1:12:E4:0D:04:47:4F:C9:9D:01:20:8A:07:C0:62:23:71:48:2A:05",
+        "29:F7:DB:7E:55:95:2D:5A:0E:18:47:42:59:93:1A:47:EF:0A:5C:F9:87:59:82:2A:8F:83:0E:42:48:80:D9:F5"
+      ]
+    }
   }
 ]
